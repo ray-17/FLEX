@@ -590,7 +590,7 @@ public class Flex extends javax.swing.JFrame{
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 540));
 
-        pack();
+        setSize(new java.awt.Dimension(1243, 596));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

@@ -270,8 +270,9 @@ public class Editable extends javax.swing.JFrame {
             prepStat.setString(9, txtEmailE.getText());
             prepStat.setBytes(10, photo);
             prepStat.setString(11, txtAdminNoE.getText());
-            prepStat.executeUpdate();
             btnUpdate.setEnabled(false);
+            prepStat.executeUpdate();
+            
             Flex fx = new Flex();
             fx.updateSystem();
             JOptionPane.showMessageDialog(this,"Student record updated!");

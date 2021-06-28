@@ -11,16 +11,20 @@ package Flex;
  */
 public class Load {
     public static void main(String[] args) {
-        Loader loader = new Loader();
-        Flex fx = new Flex();
+      run();
+    }
+    
+    public static void run(){
+          Loader loader = new Loader();
+        Login login = new Login();
         loader.setVisible(true);
         try {
             for(int i = 0; i<=100; i++){
-                Thread.sleep(40);
+                Thread.sleep(100);
                 loader.lblLoad.setText(Integer.toString(i)+"%");
                 if(i == 100){
                     loader.setVisible(false);
-                    fx.setVisible(true);
+                    login.setVisible(true);
                     System.out.println("Done!");
                 }
             }
